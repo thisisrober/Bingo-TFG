@@ -1,0 +1,163 @@
+/* Tipografías personalizadas */
+@font-face {
+    font-family: 'fuente_principal';
+    src: url('../src/fonts/TT Octosquares Trial Light.ttf');
+}
+
+@font-face {
+    font-family: 'fuente_secundaria';
+    src: url('../src/fonts/TT Octosquares Trial Thin.ttf');
+}
+
+/* Estilo general */
+body {
+    font-family: 'fuente_principal', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* Estilo de la sección principal (título y botones) */
+.hero-section {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* El video va detrás del contenido */
+    opacity: 0.7; /* Ajusta la opacidad si es necesario */
+}
+
+/* Logo */
+.logo-img {
+    max-width: 80px;
+}
+
+/* Cookies */
+/* Estilos para la alerta de cookies */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.cookie-banner p {
+    margin: 0;
+    padding: 0;
+}
+
+.cookie-banner a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.cookie-banner button {
+    background-color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    color: #333;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.cookie-banner button:hover {
+    background-color: #ffffff;
+}
+
+/* Título principal */
+.titulo-inicio {
+    font-size: 80px;
+    color: white;
+    line-height: 1.2;
+    margin: 0;
+    text-transform: none;
+}
+
+@media (max-width: 768px) {
+    .titulo-inicio {
+        font-size: 50px;
+    }
+}
+
+.titulo-logo {
+    text-align: left;
+    align-items: left;
+}
+
+/* Botones personalizados con imágenes */
+.btn-custom {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn-custom img {
+    max-width: 100%; /* Ajusta la imagen para que ocupe todo el botón */
+}
+
+.btn-custom img:hover {
+    opacity: 0.8; /* Efecto hover en la imagen */
+}
+
+/* Sección inferior con información */
+.info-section {
+    background-color: #fff;
+    color: #333;
+    z-index: 1; /* Asegura que el contenido esté sobre el video */
+}
+
+.info-section h2 {
+    font-size: 36px;
+}
+
+.info-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Sección footer */
+
+#footer div {
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.footer-link:hover {
+    text-decoration: underline;
+  }
+
+.col-md-2 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.col-md-2 h5 {
+    font-weight: bolder;
+}

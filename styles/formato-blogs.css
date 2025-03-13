@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'fuente_principal';
+    src: url('../src/fonts/TT Octosquares Trial Light.ttf');
+}
+
+@font-face {
+    font-family: 'fuente_secundaria';
+    src: url('../src/fonts/TT Octosquares Trial Thin.ttf');
+}
+
+body {
+    font-family: 'fuente_principal', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: black;
+}
+
+main img {
+    width: 40%;
+    border-radius: 20px;
+}
+
+.col-md-3 button {
+    width: 100%;
+    color: inherit;
+    border: inherit;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-md-3 button img {
+    width: 60%;
+}
+
+.col-md-3 div {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#footer div {
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.col-md-3 h5 {
+    font-weight: bolder;
+}
+
+.text-muted {
+    padding-top: 0;
+}

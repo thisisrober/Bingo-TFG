@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bingo! - social media app</title>
+  <link rel="icon" href="src/img/logo.png" type="image/png">
+
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <!-- HERO SECTION -->
+  <div class="hero-section d-flex flex-column items-center justify-content-center text-center vh-100 h-screen relative">
+    <video autoplay muted loop id="hero-video" class="video-bg absolute top-0 left-0 w-full h-full object-cover opacity-100">
+      <source src="src/img/bg-animated.mp4" type="video/mp4">
+    </video>      
+
+    <div class="titulo-logo z-10">
+      <div class="logo mb-4">
+        <img src="src/img/logo.png" alt="bingo! logo" class="logo-img max-w-[80px]">
+      </div>
+      <div class="principal mb-5">
+        <h1 class="titulo-inicio text-white text-6xl md:text-[80px] leading-tight">
+          where <br> everyone is <br> connected.
+        </h1>
+      </div>
+    </div>
+
+    <div class="botones d-flex justify-content-center z-10">
+      <!-- Botón LOGIN con imagen -->
+      <button 
+        class="btn-custom login me-3" 
+        onclick="window.location.href='auth.php?section=login'"
+      >
+        <img 
+          src="src/img/boton-login.png" 
+          alt="Login Button" 
+          class="img-fluid"
+        >
+      </button>
+      <!-- Botón REGISTER con imagen -->
+      <button 
+        class="btn-custom register" 
+        onclick="window.location.href='auth.php?section=register'"
+      >
+        <img 
+          src="src/img/boton-register.png" 
+          alt="Register Button" 
+          class="img-fluid"
+        >
+      </button>
+    </div>
+  </div>
+  <!-- FIN HERO SECTION -->
+
+  <!-- INFO SECTION -->
+  <div class="info-section py-5 bg-white text-gray-800">
+    <div class="container text-center mx-auto">
+      <h2 class="mb-4 text-3xl font-bold">¡Bienvenidos a <b>bingo!</b></h2>
+      <p class="mb-4 text-lg">
+        Bienvenidos a la página principal de <b>bingo!</b>, 
+        la nueva red social del momento. Donde todo está al alcance de tu mano.
+      </p>
+      <p class="mb-4 text-lg">
+        En <b>bingo!</b> podrás <b>buscar y conectar</b> con nuevos amigos, 
+        <b>chatear</b> en tiempo real, <b>realizar publicaciones</b> y 
+        <b>comentar</b> en los posts de tus contactos. Todo esto en una sola 
+        plataforma diseñada para mantenerte siempre conectado y al día con 
+        lo que más te importa. ¡Únete a <b>bingo!</b> y descubre una nueva 
+        forma de socializar!
+      </p>
+    </div>
+  </div>
+  <!-- FIN INFO SECCIÓN -->
+
+  <!-- SECCIÓN DE FUNCIONALIDADES -->
+  <div class="py-5">
+    <div class="container mx-auto">
+      <!-- 1) LOGIN CON GOOGLE: imagen izquierda, texto derecha -->
+      <div class="row align-items-center mb-5 flex flex-col md:flex-row">
+        <div class="col-md-6 md:w-1/2">
+          <img 
+            src="src/img/login-google.png" 
+            alt="Login con Google" 
+            class="img-fluid rounded"
+          >
+        </div>
+        <div class="col-md-6 md:w-1/2">
+          <h3 class="mb-3 text-2xl font-bold">Inicia sesión con <b>Google</b></h3>
+          <p class="text-lg">
+            Conéctate a <b>bingo!</b> de la forma más rápida y segura 
+            utilizando tu cuenta de Google. Olvídate de contraseñas complejas: 
+            con un solo clic, ya podrás acceder a todas las funcionalidades de 
+            la plataforma.
+          </p>
+        </div>
+      </div>
+
+      <!-- 2) VISTA PREVIA DE LA APLICACIÓN: texto izquierda, imagen derecha -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 order-md-1">
+          <h3 class="mb-3 text-2xl font-bold">Vista previa de la aplicación</h3>
+          <p>
+            Descubre cómo luce nuestro moderno y fluido diseño. Podrás 
+            <b>buscar a otros usuarios</b>, <b>realizar publicaciones</b> y 
+            <b>chatear con tus amigos</b> en tiempo real, todo dentro de una 
+            misma app. Gracias a nuestra interfaz intuitiva, no necesitarás 
+            salir de <b>bingo!</b> para mantenerte al día con tus contactos.
+          </p>
+        </div>
+        <div class="col-md-6 order-md-2">
+          <!-- Ajusta la ruta de la imagen según tu carpeta -->
+          <img 
+            src="src/img/vista-previa-ordenador.png" 
+            alt="Vista previa de la aplicación" 
+            class="img-fluid rounded"
+          >
+        </div>
+      </div>
+
+      <!-- 3) VISTA DE LA CONFIGURACIÓN DEL PERFIL: imagen izquierda, texto derecha -->
+      <div class="row align-items-center mb-5 flex flex-col md:flex-row">
+        <div class="col-md-6 md:w-1/2">
+          <img 
+            src="src/img/configuracion-perfil.png" 
+            alt="Configuración del perfil" 
+            class="img-fluid rounded"
+          >
+        </div>
+        <div class="col-md-6 md:w-1/2">
+          <h3 class="mb-3 text-2xl font-bold">Configuración del perfil</h3>
+          <p class="text-lg">
+            Personaliza tu perfil para reflejar quién eres. 
+            Podrás cambiar tu foto, actualizar tu información y 
+            mostrar tus mejores momentos a tus seguidores. 
+            En <b>bingo!</b> la <b>configuración de tu cuenta</b> 
+            es fácil, rápida y se actualiza al instante, 
+            para que siempre estés en control de tu identidad digital.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIN SECCIÓN DE FUNCIONALIDADES -->
+
+  <!-- FOOTER -->
+  <footer class="bg-light text-dark mt-5" id="footer">
+    <div class="container py-4 mx-auto">
+      <div class="row">
+        <!-- Nuestra historia -->
+        <div class="col-md-2">
+          <h5 class="font-bold mb-4">Nuestra historia</h5>
+          <ul class="list-unstyled">
+            <li><a href="blog/marca.html" class="footer-link">Marca</a></li>
+            <li><a href="blog/kit-de-marca.html" class="footer-link">Kit de marca</a></li>
+            <li><a href="blog/trabajo.html" class="footer-link">Trabajar en <b>bingo!</b></a></li>
+            <li><a href="blog/politica-de-privacidad-y-cookies.html" class="footer-link">Política</a></li>
+          </ul>
+        </div>
+        <!-- Funciones -->
+        <div class="col-md-2">
+          <h5 class="font-bold mb-4">Funciones</h5>
+          <ul class="list-unstyled">
+            <li><a href="blog/hilos-y-posts.html" class="footer-link">Hilos y posts</a></li>
+            <li><a href="blog/dm.html" class="footer-link">DM</a></li>
+            <li><a href="blog/buscar.html" class="footer-link">Buscar y explorar</a></li>
+          </ul>
+        </div>
+        <!-- Seguridad -->
+        <div class="col-md-2">
+          <h5 class="font-bold mb-4">Seguridad</h5>
+          <ul class="list-unstyled">
+            <li><a href="blog/seguridad-usuario.html" class="footer-link">Seguridad de la cuenta</a></li>
+          </ul>
+        </div>
+        <!-- Comunidad -->
+        <div class="col-md-2">
+          <h5 class="font-bold mb-4">Comunidad</h5>
+          <ul class="list-unstyled">
+            <li><a href="blog/ayuda-bullying.html" class="footer-link">Combatir el bullying</a></li>
+            <li><a href="blog/ayuda-padres.html" class="footer-link">Padres</a></li>
+            <li><a href="blog/programas-ayuda.html" class="footer-link">Programas</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col text-center">
+          <small class="text-muted">
+            © 2025 bingo!: social media app. Todos los derechos reservados.
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FIN FOOTER -->
+
+  <!-- BANNER DE COOKIES -->
+  <div class="cookie-banner" id="cookie-banner">
+    <p>
+      Este sitio utiliza cookies para mejorar la experiencia del usuario. 
+      <a href="blog/politica-de-privacidad-y-cookies.html">Leer más</a>.
+    </p>
+    <button id="accept-cookies">ACEPTAR</button>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+  <!-- Script de cookies -->
+  <script src="js/cookies.js"></script>
+</body>
+</html>
